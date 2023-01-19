@@ -1,0 +1,24 @@
+coloredlogs==15.0.1
+deepspeed==0.7.7
+diskcache==5.4.0
+einops==0.6.0
+encodec==0.1.1
+g2p_en==2.1.0
+humanize==4.4.0
+matplotlib==3.6.0
+numpy==1.23.3
+omegaconf==2.2.3
+openTSNE==0.6.2
+pandas==1.5.0
+soundfile==0.11.0
+torch==1.13.0+cu116
+torchaudio==0.13.0+cu116
+tqdm==4.64.1
+
+// Having version issue when installing python3.10.7 (switching via sudo update-alternatives --config python3) 
+// and needs to have pip==20.0.2 while python3.10.7 comes with pip=22~ so unable to call pip directly.
+// (https://www.debugpoint.com/install-python-3-10-ubuntu/)(https://computingforgeeks.com/how-to-install-python-on-ubuntu-linux-system/)
+// python3 -m pip install git+https://github.com/enhuiz/vall-e
+
+// Use pip install torch==1.13.0+cu116 torchaudio==0.13.0+cu116 --extra-index-url 
+https://download.pytorch.org/whl/cu116 to install torch and torchaudio with CUDA
